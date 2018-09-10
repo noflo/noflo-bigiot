@@ -12,15 +12,15 @@
   },
   "license": "MIT",
   "dependencies": {
-    "get-function-params": "2.0.3",
+    "get-function-params": "2.0.5",
     "bigiot-js": "^0.6.3",
     "noflo": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^4.0.0",
     "coveralls": "^3.0.0",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.12.0",
     "fbp-spec": "^0.6.0",
     "grunt": "^1.0.1",
@@ -28,7 +28,7 @@
     "grunt-noflo-browser": "^1.5.0",
     "noflo-core": "^0.5.0",
     "noflo-nodejs": "^0.10.1",
-    "nyc": "^12.0.1"
+    "nyc": "^13.0.1"
   },
   "keywords": [
     "noflo"
