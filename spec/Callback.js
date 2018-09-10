@@ -19,7 +19,7 @@ describe('Callback component', () => {
   before(function (done) {
     this.timeout(4000);
     const loader = new noflo.ComponentLoader(baseDir);
-    loader.load('core/Callback', (e, instance) => {
+    loader.load('bigiot/Callback', (e, instance) => {
       if (e) {
         done(e);
         return;

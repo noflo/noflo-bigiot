@@ -8,7 +8,7 @@ module.exports = function () {
     noflo_browser: {
       build: {
         files: {
-          'browser/noflo-core.js': ['package.json'],
+          'browser/noflo-bigiot.js': ['package.json'],
         },
       },
     },
