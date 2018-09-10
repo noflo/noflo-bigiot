@@ -8,8 +8,15 @@ consumer(bigiot/CreateConsumer)
 consumer -> CONSUMER auth(bigiot/AuthenticateConsumer) -> CONSUMER discover(bigiot/DiscoverOfferings)
 query -> QUERY discover OUT -> (core/Output)
 
+auth -> CONSUMER access(bigiot/AccessSubscriptions)
+auth -> CONSUMER sub(bigiot/SubscribeOfferings)
+
+discover -> OFFERINGS sub OUT -> SUBSCRIPTIONS access OUT -> (core/Output)
+
 errors(core/Repeat) -> (core/Output)
 consumer ERROR -> errors
 auth ERROR -> errors
 discover ERROR -> errors
 query ERROR -> errors
+sub ERROR -> errors
+access ERROR -> errors

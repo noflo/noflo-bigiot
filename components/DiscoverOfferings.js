@@ -1,7 +1,6 @@
 const noflo = require('noflo');
 
 function discoverOfferings(consumer, query) {
-  console.log('d', consumer, query);
   return consumer.discover(query);
 }
 
