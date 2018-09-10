@@ -1,4 +1,4 @@
-# noflo-bigiot [![Build Status](https://secure.travis-ci.org/noflo/noflo-bigiot.png?branch=master)](http://travis-ci.org/noflo/noflo-bigiot) [![Coverage Status](https://coveralls.io/repos/github/noflo/noflo-bigiot/badge.svg?branch=master)](https://coveralls.io/github/noflo/noflo-bigiot?branch=master)
+# noflo-bigiot [![Build Status](https://secure.travis-ci.org/noflo/noflo-bigiot.png?branch=master)](http://travis-ci.org/noflo/noflo-bigiot) [![Coverage Status](https://coveralls.io/repos/github/noflo/noflo-bigiot/badge.svg?branch=master)](https://coveralls.io/github/noflo/noflo-bigiot?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/noflo/noflo-bigiot.svg)](https://greenkeeper.io/)
 
 NoFlo components for [BIG IoT](https://big-iot.eu). Thin wrappers around [bigiot-js](https://github.com/flowhub/bigiot-js).
 
