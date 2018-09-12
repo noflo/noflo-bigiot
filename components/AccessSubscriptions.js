@@ -1,12 +1,7 @@
 const noflo = require('noflo');
 
-function accessSubscriptions(consumer, subscriptions, input={}) {
-  console.log('access', consumer, subscriptions);
-  const access = (sub) => {
-    return consumer.access(sub, input);
-  };
-
-  return Promise.all(subscriptions.map(access));
+function accessSubscriptions(consumer, subscriptions, input = {}) {
+  return Promise.all(subscriptions.map(sub => consumer.access(sub, input)));
 }
 
 exports.getComponent = () => noflo.asComponent(accessSubscriptions, {

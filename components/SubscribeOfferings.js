@@ -2,7 +2,7 @@ const noflo = require('noflo');
 
 function subscribeOfferings(consumer, offerings) {
   const subscribeOffer = (offer) => {
-    const id = (typeof offer == 'string') ? offer : offer.id;
+    const id = (typeof offer === 'string') ? offer : offer.id;
     return consumer.subscribe(id);
   };
 

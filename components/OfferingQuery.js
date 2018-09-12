@@ -1,7 +1,7 @@
 const noflo = require('noflo');
 const bigiot = require('bigiot-js');
 
-function offeringQuery(category, options={}) {
+function offeringQuery(category, options = {}) {
   const name = options.name || category;
   const query = new bigiot.offering(name, category);
 
@@ -10,12 +10,12 @@ function offeringQuery(category, options={}) {
   delete query.extent;
   delete query.price;
 
-  for (var key in options) {
+  Object.keys(options).forEach((key) => {
     query[key] = options[key];
-  }
+  });
 
   return query;
-};
+}
 
 exports.getComponent = () => noflo.asComponent(offeringQuery, {
   icon: null,
