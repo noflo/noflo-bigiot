@@ -4,5 +4,13 @@ node_js:
 before_script:
 - npm install -g grunt-cli
 after_success:
-- ./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls
+- "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"
 sudo: false
+deploy:
+  provider: npm
+  email: jononor@gmail.com
+  api_key:
+    secure: L/XO4Cuw/KQNzDkSMEx4y3gVi98/mBXu8DRnecoGo+G3L8A5f1WAj5MuEpnIR8wceuA5AaxwRpYY6fwmYoYuGNMQIXRxVVZqxKrIcAcsWV91Km4FOxkW18+J2vzEym9NmTfV81sFBGEtLZwIRmHHfnms/9S5ZZmGQs6p0IwJLFGLyf2PBuwjKkErFS/c83i+E2xeHkyrEsmLD0e8SULV33yXji9gLNnacoCaX9W4l9NJEFuIeIuWvsQcscGQoxd3CK30AcaSPlRnUu+VKYRmC5E6y0k5e1SD6XYdlrRKesdjlQB5Y+icYa/JPekU6kEEpxDxFrDmOuf6+ytsdYcOl221nJ2nNZpM9gdvHcBV50iGAw+ZilBGtuhwNhivhGglxdj6AozTcpBzXGbGqyelBS/MK2OLILI1/qBCxNYt7ceIs0tuoPSi31vzxPGkeGsxBYUIWZQRx8IFhHuYdXIIJJfHRYHewwKerZF/CKBDTmN89j1A61noaviWApLWXObUtB7eHFiLCC7jelJ7fjS6vh7feIFzq0ZGEtRZfGsxcWiDRznFxy8RkYqVJfDNo6jlfk9VdlLGS/q6ZHL22CGWCV1ZOtUpDu/QwqnY/dQGnJLiPpszzjiBsTNPVKixdJYAj6bkm4Om6AQeKn24bcN6aWLC7GNmzDVE7DubYc/9GI8=
+  on:
+    tags: true
+    repo: noflo/noflo-bigiot
