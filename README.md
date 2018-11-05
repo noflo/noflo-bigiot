@@ -4,3 +4,5 @@ NoFlo components for [BIG IoT](https://big-iot.eu). Thin wrappers around [bigiot
 
 This library is primarily for consuming offerings.
 If you want to implement a Provider with NoFlo, see [flowhub-bigiot-bridge](https://github.com/flowhub/bigiot-bridge).
+
+![NoFlo graph for discovering and accessing offerings](./doc/noflo-bigiot-example.png)
